@@ -1,11 +1,11 @@
-var num = +prompt('Введите кол-во ступеней')
-var sim1 = prompt('Введите отступы')
-var sim2 = prompt('Введите конечный символ')
-for (let i = 0; i < num; i++) {
-    if (i == 0 ){
-        sim2 = sim2
-    }else{
-        sim2 = sim1 + sim2;
+
+for (let i = 1; i <= 10; i++) {
+    infoAll = {
+        name: prompt('Имя'),
+        age: +prompt('Возраст')
     }
-    console.log(sim2);
+    console.log(`${i} пользователь:`);
+    for (const key in infoAll) {
+        console.log(infoAll[key]);
+    }
 }
